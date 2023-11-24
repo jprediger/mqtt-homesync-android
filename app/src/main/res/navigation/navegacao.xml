@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacao"
+    app:startDestination="@id/connectionFragment">
+
+    <fragment
+        android:id="@+id/banheiroFragment"
+        android:name="io.emqx.mqtt.fragments.BanheiroFragment"
+        android:label="fragment_banheiro"
+        tools:layout="@layout/fragment_banheiro">
+        <action
+            android:id="@+id/action_banheiroFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_banheiroFragment_to_notifFragment"
+            app:destination="@id/notifFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="io.emqx.mqtt.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_banheiroFragment"
+            app:destination="@id/banheiroFragment"
+            app:popUpTo="@id/banheiroFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_salaFragment"
+            app:destination="@id/salaFragment"
+            app:popUpTo="@id/salaFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_cozinhaFragment"
+            app:destination="@id/cozinhaFragment"
+            app:popUpTo="@id/cozinhaFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_quarto1Fragment"
+            app:destination="@id/quarto1Fragment"
+            app:popUpTo="@id/quarto1Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_quarto2Fragment"
+            app:destination="@id/quarto2Fragment"
+            app:popUpTo="@id/quarto2Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_connectionFragment"
+            app:destination="@id/connectionFragment"
+            app:popUpTo="@id/connectionFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_bioFragment"
+            app:destination="@id/bioFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notifFragment"
+            app:destination="@id/notifFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/salaFragment"
+        android:name="io.emqx.mqtt.fragments.SalaFragment"
+        android:label="fragment_sala"
+        tools:layout="@layout/fragment_sala">
+        <action
+            android:id="@+id/action_salaFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_salaFragment_to_notifFragment"
+            app:destination="@id/notifFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cozinhaFragment"
+        android:name="io.emqx.mqtt.fragments.CozinhaFragment"
+        android:label="fragment_cozinha"
+        tools:layout="@layout/fragment_cozinha">
+        <action
+            android:id="@+id/action_cozinhaFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_cozinhaFragment_to_notifFragment"
+            app:destination="@id/notifFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quarto1Fragment"
+        android:name="io.emqx.mqtt.fragments.Quarto1Fragment"
+        android:label="fragment_quarto1"
+        tools:layout="@layout/fragment_quarto1">
+        <action
+            android:id="@+id/action_quarto1Fragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_quarto1Fragment_to_notifFragment"
+            app:destination="@id/notifFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quarto2Fragment"
+        android:name="io.emqx.mqtt.fragments.Quarto2Fragment"
+        android:label="fragment_quarto2"
+        tools:layout="@layout/fragment_quarto2">
+        <action
+            android:id="@+id/action_quarto2Fragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_quarto2Fragment_to_notifFragment"
+            app:destination="@id/notifFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/connectionFragment"
+        android:name="io.emqx.mqtt.fragments.ConnectionFragment"
+        android:label="fragment_connection"
+        tools:layout="@layout/fragment_connection">
+        <action
+            android:id="@+id/action_connectionFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/bioFragment"
+        android:name="io.emqx.mqtt.fragments.BioFragment"
+        android:label="fragment_bio"
+        tools:layout="@layout/fragment_bio" >
+        <action
+            android:id="@+id/action_bioFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_bioFragment_to_notifFragment"
+            app:destination="@id/notifFragment" />
+        <action
+            android:id="@+id/action_bioFragment_to_notifFragment2"
+            app:destination="@id/notifFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notifFragment"
+        android:name="io.emqx.mqtt.fragments.NotifFragment"
+        android:label="NotifFragment" >
+    </fragment>
+</navigation>

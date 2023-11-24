@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/g1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/baseline_notifications_24"
+            android:iconTint="@color/black"
+
+            android:title="Notificações" />
+
+        <item
+            android:id="@+id/nav_biometrico"
+            android:icon="@drawable/baseline_fingerprint_24"
+            android:iconTint="@color/black"
+
+            android:title="Biometria" />
+
+    </group>
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/baseline_settings_24"
+            android:iconTint="@color/black"
+
+
+            android:title="Configurações" />
+
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/baseline_info_24"
+            android:iconTint="@color/black"
+
+            android:title="Sobre o projeto" />
+
+</menu>

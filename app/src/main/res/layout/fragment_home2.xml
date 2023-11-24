@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.HomeFragment"
+    android:background="@color/white2">
+
+    <TextView
+        android:id="@+id/textviewhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="HomeSync"
+        android:fontFamily="@font/alata"
+        android:includeFontPadding="false"
+        android:textAllCaps="false"
+        android:textColor="@color/base_green"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /> <!-- Titulo -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/salaCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewhome">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/salaImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/salaTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/sofa"
+                app:tint="@color/base_green" />
+
+            <TextView
+                android:id="@+id/salaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/alata"
+                android:includeFontPadding="false"
+                android:text="@string/sala"
+                android:textAllCaps="false"
+                android:textColor="@color/base_green"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/salaTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/salaImage"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/alata"
+                android:includeFontPadding="false"
+                android:text="20°C"
+                android:textAllCaps="false"
+                android:textColor="@color/base_green"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView> <!-- Sala de Estar -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cozinhaCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salaCardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cozinhaImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/cozinhaTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/talheres"
+                app:tint="@color/base_green" />
+
+            <TextView
+                android:id="@+id/cozinhaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/alata"
+                android:includeFontPadding="false"
+                android:text="@string/cozinha"
+                android:textAllCaps="false"
+                android:textColor="@color/base_green"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/cozinhaTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/cozinhaImage"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/alata"
+                android:includeFontPadding="false"
+                android:text="20°C"
+                android:textAllCaps="false"
+                android:textColor="@color/base_green"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView> <!-- Cozinha -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/quarto1CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cozinhaCardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/quarto1Image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/quarto1TextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/cama"
+                app:tint="@color/base_green" />
+
+            <TextView
+                android:id="@+id/quarto1TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/alata"
+                android:includeFontPadding="false"
+                android:text="@string/quarto1"
+                android:textAllCaps="false"
+                android:textColor="@color/base_green"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/quarto1Temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/quarto1Image"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/alata"
+                android:includeFontPadding="false"
+                android:text="20°C"
+                android:textAllCaps="false"
+                android:textColor="@color/base_green"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView> <!-- Quarto 1 -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/quarto2CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quarto1CardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/quarto2Image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/quarto2TextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/cama"
+                app:tint="@color/base_green" />
+
+            <TextView
+                android:id="@+id/quarto2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/alata"
+                android:includeFontPadding="false"
+                android:text="@string/quarto2"
+                android:textAllCaps="false"
+                android:textColor="@color/base_green"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/quarto2Temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/quarto2Image"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/alata"
+                android:includeFontPadding="false"
+                android:text="20°C"
+                android:textAllCaps="false"
+                android:textColor="@color/base_green"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView> <!-- Quarto 2 -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/banheiroCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quarto2CardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/banheiroImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/banheiroTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/bathtub"
+                app:tint="@color/base_green" />
+
+            <TextView
+                android:id="@+id/banheiroTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/alata"
+                android:includeFontPadding="false"
+                android:text="@string/banheiro"
+                android:textAllCaps="false"
+                android:textColor="@color/base_green"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/banheiroTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/banheiroImage"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/alata"
+                android:includeFontPadding="false"
+                android:text="20°C"
+                android:textAllCaps="false"
+                android:textColor="@color/base_green"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView> <!-- Banheiro -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
